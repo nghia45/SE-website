@@ -1,3 +1,6 @@
-h1{
-	color: #fff333;
+#dropdown-list{
+	display: flex;
+	flex-direction: row;
+	justify-items: space-between;
+	justify-content: center;
 }
