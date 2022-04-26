@@ -8,9 +8,11 @@
        }
        if($t == 'danhmucsanpham') {
            include("header.php");
-       }else if ($t == 'lienhe') {
-           include("giohang.php");
-           include("sidebar.php");
+           include("themdmsp/them.php");
+           
+       }else if ($t == 'sanpham') {
+           include("sanpham/themsanpham.php");
+           include("sanpham/lietkesanpham.php");
        }
        ?>
    </div>

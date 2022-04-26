@@ -11,20 +11,8 @@
     <?php
     include("menu.php");
     include("main.php");
+    include("../admin/config.php");
     ?>
-    <table>
-  
-  <tr>
-  <td>Tên danh mục</td>
-    <td><input type="text" name = "Them danh muc sp"></td>
-  </tr>
-  <tr>
-    <td>Thứ tự</td>
-    <td><input type = "text" name = "Thứ tự danh mục"></td>
-  </tr>
-  <tr>
-    <td><input type = "submit" value ="Thêm"></td>
-  </tr>
-</table>
+   
 </body>
 </html>
