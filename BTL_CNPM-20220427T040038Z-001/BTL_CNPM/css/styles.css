@@ -1,0 +1,148 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 1;
+}
+
+.wrapper {
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../img/giayadd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 180px;
+    border: 1px solid #ff80ff;
+    height: 180px;
+    width: 100%;
+   
+       
+        
+    
+}
+
+.menu {
+    border: 1px solid #1aff8c;
+    height: 50px;
+    width: 100%;
+}
+
+.list_menu {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    
+    list-style: none;
+    margin: 0 auto;
+    line-height: 27px;
+}
+
+.list_menu li {
+    float: left;
+    margin: 7px;
+    padding: 5px;
+}
+
+.list_menu li:hover {
+    background: burlywood;
+}
+.list_menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: #3333ff;
+}
+#main {
+    border: 1px solid #00ff80;
+    height: auto;
+    width: 100%;
+}
+<!--.sidebar {
+    color: #fff;
+    
+    height: 390px;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    background: #6d7fcc;
+    border-radius: 3ch;
+}
+.list_sidebar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 27px;
+}
+
+.list_sidebar li {
+    margin: 7px;
+    padding: 5px;
+}
+
+.list_sidebar li:hover {
+    background: cadetblue;
+}
+.list_sidebar li a {
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    display: block;
+}
+.maincontent {
+    border: 1px solid #ff0000;
+    height: auto;
+    width: 78%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+ul.product_list li {
+    width: 18%;
+    border-radius: 2px;
+    margin: 5px;
+    float: left;
+    background: #00e6ac;
+}
+ul.product_list li img {
+    width: 100%;
+}
+ul.product_list li a {
+    text-decoration: none;
+}
+p.title_product {
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+p.price_product {
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer {
+    border: 1px solid #ff1a8c;
+    height: 150px;
+    width: 100%;
+    background: #00cc99;
+}
+.clear {
+    clear: both;
+}
+.footer_copyright {
+    text-align: center;
+    color: #000;
+}
