@@ -1,0 +1,5 @@
+<h3>Tên sản phẩm: <?php echo $row_chitiet['tensanpham']?></h3>
+   <p>Giá sản phẩm: <?php echo number_format($row_chitiet['giasp']).'vnd'?></p>
+   <p>Số lượng: <?php echo $row_chitiet['soluong']?></p>
+   <p>Danh mục: <?php echo $row_chitiet['tendanhmuc']?></p>
+   <p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm vào giỏ hàng"></p>
