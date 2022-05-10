@@ -15,21 +15,22 @@
         }
     }
 ?>
-<form action="" method="post" autocomplete="off">
-      <table class="table-login" border="1" style="text-align: center;border-collapse: collapse;">
-          <tr>
-              <td colspan="2"><h3>Đăng nhập</h3></td>
-          </tr>
-          <tr>
-              <td>Tài khoản</td>
-              <td><input type="text" name="email" placeholder="Email..."></td>
-          </tr>
-          <tr>
-              <td>Mật khẩu</td>
-              <td><input type="password" name="password" placeholder="Mật khẩu..."></td>
-          </tr>
-          <tr>
-              <td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập"></td>
-          </tr>
-      </table>
-      </form>
+
+<form action="" method="post" class="form-dangnhap">
+    <p>Đăng nhập</p>
+    <div class="row align-items-center mb-3">
+        <div class="col-6">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="text" name="email" class="form-control">
+        </div>
+        <div class="col-6">
+            <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
+            <input type="password" name="password" class="form-control">
+        </div>
+    </div>
+    <div class="align-items-center mb-3">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary" name="dangnhap">Đăng nhập</button>
+        </div>
+    </div>
+</form>

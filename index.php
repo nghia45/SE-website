@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="./asserts/css/style.css">
         <link rel="stylesheet" type="text/css" href="./asserts/css/sanpham.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     </head>
     <body>
@@ -22,5 +23,6 @@
             ?>
         </div>
         <script src=".\asserts\js\bootstrap.js"></script>
+        <script src=".\asserts\js\script.js"></script>
     </body>
 </html>
