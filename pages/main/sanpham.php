@@ -23,7 +23,7 @@
     <div class="product">
       <p class = "loaisp"></p>
       <p class = "tensp"><?php echo $row_chitiet['tensanpham']?></p>
-      <p class = "giasp"><?php echo number_format($row_chitiet['giasp']).'vnd'?></p>
+      <p class = "giasp"><?php echo number_format($row_chitiet['giasp']).'đ'?></p>
       <p class="desc"></p>
       <p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm vào giỏ hàng"></p>
     </div>
