@@ -10,20 +10,20 @@
   </div>
   <form method="post" action="pages/main/themgiohang.php?idsanpham=<?php echo $row_chitiet['id_sanpham']?>">
     <p class="pick">chọn size</p>
-    <div class="sizes">
-      <div class="size">5</div>
-      <div class="size">6</div>
-      <div class="size">7</div>
-      <div class="size">8</div>
-      <div class="size">9</div>
-      <div class="size">10</div>
-      <div class="size">11</div>
-      <div class="size">12</div>
-    </div>
+    <select class = "size">
+      <option value = "38">38</option>
+      <option value = "39">39</option>
+      <option value = "40">40</option>
+      <option value = "41">41</option>
+      <option value = "42">42</option>
+      <option value = "43">43</option>
+      <option value = "44">44</option>
+      <option value = "45">45</option>
+    </select>
     <div class="product">
       <p class = "loaisp"></p>
       <p class = "tensp"><?php echo $row_chitiet['tensanpham']?></p>
-      <p class = "giasp"><?php echo number_format($row_chitiet['giasp']).'vnd'?></p>
+      <p class = "giasp"><?php echo number_format($row_chitiet['giasp']).'đ'?></p>
       <p class="desc"></p>
       <p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm vào giỏ hàng"></p>
     </div>

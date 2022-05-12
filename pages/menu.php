@@ -47,8 +47,8 @@
             </ul>
 
             <form class="d-flex ms-auto" action="index.php?quanly=timkiem" method="post">
-                    <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" name="tukhoa">
-                    <button class="btn btn-outline-success" type="submit" name="timkiem" value="Tìm kiếm">Search</button>
+                    <input class="form-control me-2" type="text" placeholder="Tìm kiếm" aria-label="Search" name="tukhoa">
+                    <button class="btn btn-outline-success" type="submit" name="timkiem" value="Tìm kiếm">TÌM</button>
             </form>
         </div>
     </div>

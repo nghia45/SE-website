@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+h3 {
+    display: inline-block;
+    text-align: center;
+}
+
+ul.product_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+ul.product_list li{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    flex-basis: 25%;
+}
+
+ul.product_list li .cat_product{
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+ul.product_list li .title_product{
+    font-size: 20px;
+    color: black;
+}
+
+ul.product_list li .price_product{
+    font-size: 16px;
+    color: black;
+}
+
+ul.product_list li img{
+    max-width: 400px;
+    max-height: 290px;
+}

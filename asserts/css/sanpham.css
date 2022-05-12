@@ -86,7 +86,7 @@ body {
   .giasp {
     font-size: 20px;
     color: black;
-    text-transform: uppercase;
+    text-transform: none;
     margin-top: -5px;
   }
 
@@ -130,7 +130,7 @@ body {
     margin-top: 5px;
   }
   
-  .size :hover{
+  .sizes :hover{
     cursor: pointer;
   }
   
@@ -146,6 +146,12 @@ body {
     border: 1px solid black;
     font-size: 0.7em;
     text-align: center;
+  }
+
+  .size :hover{
+    background: black;
+    color: white;
+    transition: all .4s ease-in-out;
   }
   
   .focus{

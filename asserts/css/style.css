@@ -103,3 +103,7 @@ color: #ffc371;
     border-color: black;
     border-radius: 10px;
 }
+
+.btn btn-outline-succes {
+    color: lightblue
+}

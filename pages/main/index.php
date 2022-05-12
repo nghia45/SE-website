@@ -14,21 +14,23 @@
 ?>
 <h3>Sản phẩm mới nhất</h3>
                 <ul class="product_list">
-                <?php 
-                    while($row_pro = mysqli_fetch_array($query_pro)) {
-                ?>
-                    <li>
-                        <a href="index.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
-                        <img src="admincp/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh']?>">
-                        <p class="title_product">Tên sản phẩm: <?php echo $row_pro['tensanpham']?></p>
-                        <p class="price_product">Giá : <?php echo number_format($row_pro['giasp']).'vnd'?></p>
-                        </a>
-                    </li>
-                <?php
-                    }
-                ?>
+                    <?php 
+                        while($row_pro = mysqli_fetch_array($query_pro)) {
+                    ?>
+                        <li>
+                            <div class="product_info">
+                                <a href="index.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
+                                <img src="admincp/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh']?>">
+                                <P class="cat_product"><?php echo $row_pro['tomtat']?></p>
+                                <p class="title_product"><?php echo $row_pro['tensanpham']?></p>
+                                <p class="price_product"><?php echo number_format($row_pro['giasp']).'đ'?></p>
+                                </a>
+                            </div>
+                        </li>
+                    <?php
+                        }
+                    ?>
                 </ul>
-                <div style="clear: both;"></div>
                 <p>Trang: </p>
                 <?php
                   $sql_trang = mysqli_query($mysqli,"SELECT * FROM tb_sanpham");
