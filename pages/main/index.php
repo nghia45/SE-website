@@ -12,7 +12,23 @@
    $sql_pro = "SELECT * FROM tb_sanpham,tb_danhmuc WHERE tb_sanpham.id_danhmuc = tb_danhmuc.id_danhmuc ORDER BY tb_sanpham.id_sanpham DESC LIMIT $begin,3";
    $query_pro = mysqli_query($mysqli, $sql_pro);
 ?>
-<h3>Sản phẩm mới nhất</h3>
+<div class="banner">
+				<a href="" class="banner-thumb">
+					<img src=".\asserts\img\banner.png" alt="">
+				</a>
+				<div class="banner-des">
+					<h3>Giảm giá áp dụng trong giỏ hàng. Một số sản phẩm ngoại lệ. Điều khoản và Điều kiện đi kèm</h3>
+					<a href="" id="buynow">MUA NGAY</a>
+
+				</div>
+			</div>
+			<div>
+				<img src=".\asserts\img\front-bg.png" class="img-fluid">
+			</div>
+</div>
+<div class="headline">
+	<h3>SẢN PHẨM MỚI NHẤT</h3>
+</div>
                 <ul class="product_list">
                     <?php 
                         while($row_pro = mysqli_fetch_array($query_pro)) {
