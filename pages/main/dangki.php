@@ -47,7 +47,7 @@ header('Location:index.php?quanly=giohang');
     </div>
     <div class="row g-4 align-items-center mb-3">
         <div class="col-auto">
-            <button type="submit" class="btn btn-primary">Đăng ký</button>
+            <button type="submit" class="btn btn-primary" name="dangki">Đăng ký</button>
         </div>
         <div class="col-auto">
             <a href="index.php?quanly=dangnhap" style="text-decoration: none;">Đăng nhập nếu có tài khoản</a>
