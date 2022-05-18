@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./asserts/css/sanpham.css">
         <link rel="stylesheet" type="text/css" href="./asserts/css/danhsachsp.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+        <link rel="stylesheet" href="https://fontawesome.com/css/font-awesome.min.css">
     </head>
     <body>
         <div class="wrapper">

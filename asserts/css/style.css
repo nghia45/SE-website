@@ -4,6 +4,41 @@
     justify-items: space-between;
     justify-content: center;
 }
+
+/* ---Banner slider--- */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.6;
+}
+
+.slider-btn{
+    margin-top: 30px;
+}
+
+.slider-btn .btn {
+    background-color: #fff;
+    color: white;
+    border-radius: 0;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
 .banner h3{
     color: #111;
     margin: 50px 20px;
