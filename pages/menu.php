@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Trang chủ</a>
                 </li>
                 <?php 
                    while($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
@@ -35,6 +35,7 @@
                 if(isset($_SESSION['dangki'])) {
                 ?>
                  <li class="nav-item"><a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a></li>
+                 <li class="nav-item"><a class="nav-link" href="index.php?quanly=user">Thông tin cá nhân</a></li>
                 <?php
                 } else {
                 ?>
@@ -48,7 +49,9 @@
 
             <form class="d-flex ms-auto" action="index.php?quanly=timkiem" method="post">
                     <input class="form-control me-2" type="text" placeholder="Tìm kiếm" aria-label="Search" name="tukhoa">
-                    <button class="btn btn-outline-success" type="submit" name="timkiem" value="Tìm kiếm">TÌM</button>
+                    <button class="btn btn-outline-dark" type="submit" name="timkiem" value="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass" style="color: blue "></i>
+                    </button>
             </form>
         </div>
     </div>

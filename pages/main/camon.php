@@ -1,1 +1,3 @@
-<p>Cảm ơn bạn đã mua hàng, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất</p>
+<div class = "message_container">
+    <p class = "message">Cảm ơn bạn đã đặt hàng</p>
+</div>

@@ -9,8 +9,8 @@
         <link rel="stylesheet" type="text/css" href="./asserts/css/style.css">
         <link rel="stylesheet" type="text/css" href="./asserts/css/sanpham.css">
         <link rel="stylesheet" type="text/css" href="./asserts/css/danhsachsp.css">
+        <link rel="stylesheet" type="text/css" href="./asserts/css/camon.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
     </head>
     <body>
         <div class="wrapper">
