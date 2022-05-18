@@ -18,22 +18,22 @@ header('Location:index.php?quanly=giohang');
 <form action="" method="post" class="form-dangky">
     <p>Đăng kí thành viên</p>
     <div class="row g-5 align-items-center mb-3">
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
             <input type="text" size="50" name="hovaten" class="form-control">
         </div>
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputEmail1" class="form-label">Số điện thoại</label>
             <input type="text" size="50" name="dienthoai" class="form-control">
         </div>
     </div>
     <div class="row g-5 align-items-center mb-3">
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputPassword1" class="form-label">Email</label>
             <input type="text" size="50" name="email" class="form-control">
         </div>
-        <div class="col-auto">
-            <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
+        <div class="col-6">
+            <label for="exampleInputEmail1" class="form-label" autocomplete="off">Mật khẩu</label>
             <input type="text" size="50" name="matkhau" class="form-control">
         </div>
     </div>
@@ -53,4 +53,3 @@ header('Location:index.php?quanly=giohang');
             <a href="index.php?quanly=dangnhap" style="text-decoration: none;">Đăng nhập nếu có tài khoản</a>
         </div>
     </div>
-</form>

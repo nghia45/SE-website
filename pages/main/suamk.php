@@ -13,21 +13,22 @@
         }
     }
 ?>
-<form action="" method="post" autocomplete="off">
-      <table class="table-login" border="1" style="text-align: center;border-collapse: collapse;">
-          <tr>
-              <td colspan="2"><h3>Đổi mật khẩu</h3></td>
-          </tr>
-          <tr>
-              <td>Mật khẩu cũ</td>
-              <td><input type="password" name="mkcu"></td>
-          </tr>
-          <tr>
-              <td>Mật khẩu mới</td>
-              <td><input type="password" name="mkmoi"></td>
-          </tr>
-          <tr>
-              <td colspan="2"><input type="submit" name="doimk" value="Xác nhận"></td>
-          </tr>
-      </table>
-      </form>
+
+<form action="" method="post" class="form-dangnhap" autocomplete="off">
+    <p>Đổi mật khẩu</p>
+    <div class="row align-items-center mb-3">
+        <div class="col-6">
+            <label for="exampleInputEmail1" class="form-label">Mật khẩu cũ</label>
+            <input type="password" name="mkcu" class="form-control">
+        </div>
+        <div class="col-6">
+            <label for="exampleInputEmail1" class="form-label">Mật khẩu mới</label>
+            <input type="password" name="mkmoi" class="form-control">
+        </div>
+    </div>
+    <div class="align-items-center mb-3">
+        <div class="col-auto">
+            <button type="submit" name="doimk" value="Xác nhận" class="btn btn-primary">Xác nhận</button>
+        </div>
+    </div>
+</form>

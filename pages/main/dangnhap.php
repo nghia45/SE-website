@@ -25,7 +25,7 @@
         </div>
         <div class="col-6">
             <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
-            <input type="password" name="password" class="form-control">
+            <input type="password" name="password" class="form-control" autocomplete="off">
         </div>
     </div>
     <div class="align-items-center mb-3">
