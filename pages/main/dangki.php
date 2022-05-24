@@ -1,22 +1,5 @@
-<?php
-if(isset($_POST['dangki'])) {
-$tenkhachhang = $_POST['hovaten'];
-$email = $_POST['email'];
-$dienthoai = $_POST['dienthoai'];
-$diachi = $_POST['diachi'];
-$matkhau = md5($_POST['matkhau']);
-$sql = mysqli_query($mysqli,"INSERT INTO tb_dangki(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
-if($sql) {
-echo '<p style="color:green">Đăng kí thành công</p>';
-$_SESSION['dangki'] = $tenkhachhang;
-$_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
-header('Location:index.php?quanly=giohang');
-}
-}
-?>
-
-<form action="" method="post" class="form-dangky">
-    <p>Đăng kí thành viên</p>
+<h3>Đăng kí thành viên</h3>
+<form action="" method="post" class="form-dangky" autocomplete="off">
     <div class="row g-5 align-items-center mb-3">
         <div class="col-auto">
             <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
@@ -34,7 +17,7 @@ header('Location:index.php?quanly=giohang');
         </div>
         <div class="col-auto">
             <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
-            <input type="text" size="50" name="matkhau" class="form-control">
+            <input type="password" size="50" name="matkhau" class="form-control">
         </div>
     </div>
     <div class="mb-3">
@@ -47,10 +30,26 @@ header('Location:index.php?quanly=giohang');
     </div>
     <div class="row g-4 align-items-center mb-3">
         <div class="col-auto">
-            <button type="submit" class="btn btn-primary">Đăng ký</button>
+            <button type="submit" class="btn btn-primary" name="dangki">Đăng ký</button>
         </div>
         <div class="col-auto">
-            <a href="index.php?quanly=dangnhap" style="text-decoration: none;">Đăng nhập nếu có tài khoản</a>
+            <a href="index.php?quanly=dangnhap">Đăng nhập nếu có tài khoản</a>
         </div>
     </div>
+    <?php
+        if(isset($_POST['dangki'])) {
+        $tenkhachhang = $_POST['hovaten'];
+        $email = $_POST['email'];
+        $dienthoai = $_POST['dienthoai'];
+        $diachi = $_POST['diachi'];
+        $matkhau = md5($_POST['matkhau']);
+        $sql = mysqli_query($mysqli,"INSERT INTO tb_dangki(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
+        if($sql) {
+        echo '<p style="color:green">Đăng kí thành công</p>';
+        $_SESSION['dangki'] = $tenkhachhang;
+        $_SESSION['email'] = $email;
+        $_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
+        }
+        }
+    ?>
 </form>

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-h3 {
-    display: inline-block;
-    text-align: center;
-}
 
 ul.product_list {
     list-style: none;

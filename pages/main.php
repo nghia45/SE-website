@@ -1,8 +1,4 @@
 <div id="main"> 
-     <?php 
-     include("sidebar/sidebar.php");
-     ?>
-
     <div class="maincontent">
           <?php
           if(isset($_GET['quanly'])) {
@@ -28,9 +24,14 @@
             include("main/dangnhap.php");
           } else if($tam == 'timkiem') {
             include("main/timkiem.php");
-          }  else if($tam == 'camon') {
+          } else if($tam == 'camon') {
             include("main/camon.php");
-          } else {
+          } else if($tam == 'user') {
+            include("main/user.php");
+          } else if($tam == 'suamk') {
+            include("main/suamk.php");
+          }
+          else {
               include("main/index.php");
           }
           ?>

@@ -1,12 +1,11 @@
-
-<p>Giỏ hàng
+<h3>Giỏ hàng
    <?php
    if(isset($_SESSION['dangki'])) {
-      echo 'của '.$_SESSION['dangki'];
+      echo 'của:  '.$_SESSION['dangki'];
    }
    ?>
 
-</p>
+</h3>
 <?php
     if(isset($_SESSION['cart'])) {
 
@@ -20,6 +19,7 @@
     <th>Tên sản phẩm</th>
     <th>Hình ảnh</th>
     <th>Số lượng</th>
+    <th>Size</th>
     <th>Giá sp</th>
     <th>Thành tiền</th>
     <th>Quản lý</th>
@@ -39,20 +39,29 @@
     <td><?php echo $cart_iteam['tensanpham']; ?></td>
     <td><img width="40%" src="admincp/modules/quanlysp/uploads/<?php echo $cart_iteam['hinhanh']; ?>"></td>
     <td>
-       <a href="pages/main/themgiohang.php?cong=<?php echo $cart_iteam['id'] ?>"><i class="fa-solid fa-plus"></a>
+       <a href="pages/main/themgiohang.php?cong=<?php echo $cart_iteam['id'] ?>&size=<?php echo $cart_iteam['size']; ?>">
+         <i class="fa-solid fa-plus" style="color: black;"></i> 
+      </a>
        <?php echo $cart_iteam['soluong']; ?>
-       <a href="pages/main/themgiohang.php?tru=<?php echo $cart_iteam['id'] ?>"><i class="fa-solid fa-minus"></i></a>
+       <a href="pages/main/themgiohang.php?tru=<?php echo $cart_iteam['id'] ?>&size=<?php echo $cart_iteam['size']; ?>">
+         <i class="fa-solid fa-minus" style="color: black;"></i>
+      </a>
     </td>
-    <td><?php echo number_format($cart_iteam['giasp']).'vnd'; ?></td>
-    <td><?php echo number_format($thanhtien).'vnd'; ?></td>
-   <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_iteam['id'] ?>"><i class="fa-solid fa-trash-can"></i></a></td>
+    <td><?php echo $cart_iteam['size']; ?></td>
+    <td><?php echo number_format($cart_iteam['giasp']).'đ'; ?></td>
+    <td><?php echo number_format($thanhtien).'đ'; ?></td>
+    <td>
+       <a href="pages/main/themgiohang.php?xoa=<?php echo $cart_iteam['id'] ?>&size=<?php echo $cart_iteam['size']; ?>">
+            <i class="fa-solid fa-trash-can"  style="color: black;"></i>
+       </a>
+    </td>
   </tr>
   <?php 
       }
   ?>
    <tr>
      <td colspan="8">
-        <p style="float: left;">Tổng tiền: <?php echo number_format($tongtien).'vnd' ?></p>
+        <p style="float: left;">Tổng tiền: <?php echo number_format($tongtien).'đ' ?></p>
         <p style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả</a></p>
         <div style="clear: both;"></div>
         <?php
