@@ -34,8 +34,9 @@
                 <?php
                 if(isset($_SESSION['dangki'])) {
                 ?>
-                 <li class="nav-item"><a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a></li>
                  <li class="nav-item"><a class="nav-link" href="index.php?quanly=user">Thông tin cá nhân</a></li>
+                 <li class="nav-item"><a class="nav-link" href="index.php?quanly=donhangdadat">Lịch sử đơn hàng</a></li>
+                 <li class="nav-item"><a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a></li>
                 <?php
                 } else {
                 ?>

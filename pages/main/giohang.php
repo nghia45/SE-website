@@ -1,3 +1,13 @@
+<!-- new -->
+<div class="container">
+  <!-- Responsive Arrow Progress Bar -->
+  <div class="arrow-steps clearfix">
+    <div class="step current"> <span> <a href="index.php?quanly=giohang" >Giỏ hàng</a></span> </div>
+    <div class="step"> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển</a></span> </div>
+    <div class="step"> <span><a href="index.php?quanly=ttthanhtoan" >Thanh toán</a><span> </div>
+</div>
+</div>
+
 <h3>Giỏ hàng
    <?php
    if(isset($_SESSION['dangki'])) {
@@ -67,7 +77,7 @@
         <?php
         if(isset($_SESSION['dangki'])) {
         ?>
-        <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+        <p><a href="index.php?quanly=vanchuyen">Đặt hàng</a></p>
         <?php
         } else {
         ?>

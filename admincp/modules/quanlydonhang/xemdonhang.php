@@ -11,7 +11,7 @@ $query_lietke = mysqli_query($mysqli,$sql_lietke);
     <th>Mã đơn hàng</th>
     <th>Tên sản phẩm</th>
     <th>Số lượng</th>
-    <th>ĐƠn giá</th>
+    <th>Đơn giá</th>
     <th>Thành tiền</th>
   </tr>
   <?php

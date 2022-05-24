@@ -30,8 +30,15 @@
             include("main/user.php");
           } else if($tam == 'suamk') {
             include("main/suamk.php");
-          }
-          else {
+          }   else if($tam == 'vanchuyen') {
+            include("main/vanchuyen.php");
+          }  else if($tam == 'ttthanhtoan') {
+            include("main/thongtinthanhtoan.php");
+          }  else if($tam == 'donhangdadat') {
+            include("main/donhangdadat.php");
+          }  else if($tam == 'xemdonhang') {
+            include("main/xemdonhang.php");
+          }  else {
               include("main/index.php");
           }
           ?>
