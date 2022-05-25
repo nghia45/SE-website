@@ -4,6 +4,7 @@
    $truenumber = true;
    $truepassword = true;
    $trueaddress = true;
+
   $numberErr = $emailErr = $nameErr = $passwordErr = $addressErr ="";
    if(isset($_POST['dangki'])) {
        $tenkhachhang = $_POST['hovaten'];
@@ -34,11 +35,11 @@
           $truename = true;
         $name = test_input($_POST["hovaten"]);
         // check if name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+        if (!preg_match('/^[\p{L} ]+$/u',$name)) {
             $truename = false;
           $nameErr = "Only letters and white space allowed";
         }
-   
+    }
 
         //checkvalidaddress
         if (empty($_POST["diachi"])) {
@@ -73,20 +74,31 @@
       
       
         if ($trueemail == true && $truename == true && $trueaddress && $truenumber && $truepassword ) {
-      
-       $sql = mysqli_query($mysqli,"INSERT INTO tb_dangki(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
-       if($sql) {
+      $sql = mysqli_query($mysqli, "SELECT * FROM tb_dangki where email = '".$email."'");
+      $count = 0;
+      $count = mysqli_num_rows($sql);
+      $a = $count;
+      if($a == 0) {
+        $sql2 = mysqli_query($mysqli,"INSERT INTO tb_dangki(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
+        if($sql2) {
            echo '<p style="color:green">Đăng kí thành công</p>';
            $_SESSION['dangki'] = array($tenkhachhang,$email,$dienthoai,$diachi,$matkhau);
-       } 
-       
-       
-           
-    } else {
+       }  else {
         echo '<p style="color:green">Failed</p>';
-    }
-    }
+     }
+      } else if ($a > 0) {
+        echo '<p style="color:green">The email is already in use.Please choose an other one</p>';
+      } 
+      
+       
+  
+    
+       
+    }         
+    
+    
 }
+
     function test_input($data) {
         $data = trim($data);
         $data = stripslashes($data);
