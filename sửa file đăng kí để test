@@ -4,8 +4,10 @@
    $truenumber = true;
    $truepassword = true;
    $trueaddress = true;
-
-  $numberErr = $emailErr = $nameErr = $passwordErr = $addressErr ="";
+   $checkprinciple = true;
+ 
+  
+   $principleErr = $numberErr = $emailErr = $nameErr = $passwordErr = $addressErr ="";
    if(isset($_POST['dangki'])) {
        $tenkhachhang = $_POST['hovaten'];
        $email = $_POST['email'];
@@ -70,10 +72,21 @@
               $numberErr = "Must contain only numbers";
             }
         }
+        
+        //checkprinciple
+         
+        if(empty($_POST["check"])) {
+        $checkprinciple = false;
+        $principleErr = "Must accept !";
+         
+      } else {
+         $checkprinciple = true;
+         
+        } 
 
       
       
-        if ($trueemail == true && $truename == true && $trueaddress && $truenumber && $truepassword ) {
+        if ($checkprinciple && $trueemail == true && $truename == true && $trueaddress && $truenumber && $truepassword ) {
       $sql = mysqli_query($mysqli, "SELECT * FROM tb_dangki where email = '".$email."'");
       $count = 0;
       $count = mysqli_num_rows($sql);
@@ -139,8 +152,9 @@
         <span class="error" style = "color: red;">* <?php echo $addressErr;?></span>
     </div>
     <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Tôi đồng ý với các điều khoản</label>
+        <input type="checkbox" class="form-check-input"  name = "check">
+        <label class="form-check-label" >Tôi đồng ý với các điều khoản</label>
+         <span class="error" style = "color: red;">*<?php echo $principleErr;?></span>
     </div>
     <div class="row g-4 align-items-center mb-3">
         <div class="col-auto">
