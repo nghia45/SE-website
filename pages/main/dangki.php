@@ -92,7 +92,7 @@ if (isset($_POST['dangki'])) {
             $sql2 = mysqli_query($mysqli, "INSERT INTO tb_dangki(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('" . $tenkhachhang . "','" . $email . "','" . $diachi . "','" . $matkhau . "','" . $dienthoai . "')");
             if ($sql2) {
                 echo '<p style="color:green">Đăng kí thành công</p>';
-                $_SESSION['dangki'] = array($tenkhachhang, $email, $dienthoai, $diachi, $matkhau);
+               
             } else {
                 echo '<p style="color:green">Failed</p>';
             }
