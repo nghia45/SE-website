@@ -15,7 +15,6 @@
             <p class = "tensp"><?php echo $row_chitiet['tensanpham']?></p>
             <p class = "giasp"><?php echo number_format($row_chitiet['giasp']).'đ'?></p>
             <p class="desc"><?php echo $row_chitiet['noidung']?></p>
-            <p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm vào giỏ hàng"></p>
             <div class = "sizes">
               <p class="pick">chọn size</p>
               <select name="size">
@@ -28,6 +27,8 @@
                 <option value = "44">44</option>
                 <option value = "45">45</option>
               </select>
+            </div>
+            <p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm vào giỏ hàng"></p>
           </div>
           </form>
         </div>

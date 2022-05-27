@@ -1,3 +1,4 @@
+<h3>Thông tin vận chuyển và giỏ hàng</h3>
 <div class="container">
   <!-- Responsive Arrow Progress Bar -->
   <div class="arrow-steps clearfix">
@@ -18,8 +19,8 @@
     $diachi = $row['diachi'];
    ?>
   	<div class="col-md-8">
-  		<h4>Thông tin vận chuyển và giỏ hàng</h4>
-  		<ul>
+	    <h4>Thông tin vận chuyển</h4>
+  		<ul style="border-collapse: collapse;" border="1">
   			<li>Họ và tên vận chuyển : <b><?php echo $tenkhachhang ?></b></li>
   			<li>Số điện thoại : <b><?php echo $dienthoai ?></b></li>
   			<li>Địa chỉ : <b><?php echo $diachi ?></b></li>
@@ -120,6 +121,6 @@
 		    Momo
 		  </label>
 		</div>
-		<input type="submit" value="Thanh toán ngay" name="thanhtoan" class="btn btn-danger">
+		<input type="submit" value="Thanh toán ngay" name="thanhtoan" class="cash-btn">
 		</div>
     </form>

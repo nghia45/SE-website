@@ -1,4 +1,4 @@
-
+<h3>Thông tin vận chuyển</h3>
 <div class="container">
   <!-- Responsive Arrow Progress Bar -->
   <div class="arrow-steps clearfix">
@@ -6,7 +6,6 @@
     <div class="step current"> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển</a></span> </div>
     <div class="step"> <span><a href="index.php?quanly=ttthanhtoan" >Thanh toán</a><span> </div>
   </div>
- <h4>Thông tin vận chuyển</h4>
  <?php
     $id_khachhang = $_SESSION['id_khachhang'];
     $sql_sua = "SELECT * FROM tb_dangki WHERE id_dangki = '".$id_khachhang."' LIMIT 1";
@@ -70,15 +69,15 @@
        <?php echo $cart_iteam['soluong']; ?>
     </td>
     <td><?php echo $cart_iteam['size']; ?></td>
-    <td><?php echo number_format($cart_iteam['giasp']).'vnd'; ?></td>
-    <td><?php echo number_format($thanhtien).'vnd'; ?></td>
+    <td><?php echo number_format($cart_iteam['giasp']).'đ'; ?></td>
+    <td><?php echo number_format($thanhtien).'đ'; ?></td>
   </tr>
   <?php 
       }
   ?>
    <tr>
      <td colspan="8">
-        <p style="float: left;">Tổng tiền: <?php echo number_format($tongtien).'vnd' ?></p>
+        <p style="float: left;">Tổng tiền: <?php echo number_format($tongtien).'đ' ?></p>
         <div style="clear: both;"></div>
         <?php
         if(isset($_SESSION['dangki'])) {
