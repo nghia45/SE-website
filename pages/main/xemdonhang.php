@@ -33,8 +33,8 @@
     <td><img src="admincp/modules/quanlysp/uploads/<?php echo $row['hinhanh']?>" style="width: 100px; height: 100px" /></td>
     <td><?php echo $row['size'] ?></td>
     <td><?php echo $row['soluongmua'] ?></td>
-    <td><?php echo number_format($row['giasp'],0,',','.').'vnđ' ?></td>
-    <td><?php echo number_format($thanhtien,0,',','.').'vnđ' ?></td>
+    <td><?php echo number_format($row['giasp'],0,',','.').'đ' ?></td>
+    <td><?php echo number_format($thanhtien,0,',','.').'đ' ?></td>
    	
   </tr>
   <?php
@@ -42,7 +42,7 @@
   ?>
   <tr>
   	<td colspan="6">
-   		<p>Tổng tiền : <?php echo number_format($tongtien,0,',','.').'vnđ' ?></p>
+   		<p>Tổng tiền : <?php echo number_format($tongtien,0,',','.').'đ' ?></p>
    	</td>
    
   </tr>

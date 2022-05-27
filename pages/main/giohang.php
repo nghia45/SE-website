@@ -1,3 +1,11 @@
+<h3>Giỏ hàng
+   <?php
+   if(isset($_SESSION['dangki'])) {
+      echo 'của:  '.$_SESSION['dangki'];
+   }
+   ?>
+
+</h3>
 <!-- new -->
 <div class="container">
   <!-- Responsive Arrow Progress Bar -->

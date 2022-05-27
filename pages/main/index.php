@@ -21,17 +21,13 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./asserts/img/front-bg.jpg" class="d-block w-100 img-fluid" alt="...">
-                <div class="slider-btn">
-                    <button class="btn">Đặt hàng</button>
-                    <button class="btn">Liên hệ</button>
-                </div>
+                <img src="asserts\img\nike-spike-lee-Hero-2022.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./asserts/img/front-bg2.jpg" class="d-block w-100 img-fluid" alt="...">
+                <img src="asserts\img\dhara-barevadiya-1-1366x600.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./asserts/img/front-bg3.jpg" class="d-block w-100 img-fluid" alt="...">
+                <img src="asserts\img\279ad0b5790a659cbdd81a45c1525a03.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -44,7 +40,7 @@
         </button>
     </div>
 </div>
-<p class="headline">Sản phẩm mới nhất</p>
+<p class="headline-3">Sản phẩm mới nhất</p>
 <ul class="product_list">
     <?php 
         while($row_pro = mysqli_fetch_array($query_pro)) {

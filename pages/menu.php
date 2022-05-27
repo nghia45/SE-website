@@ -1,8 +1,9 @@
 <?php
 $sql_danhmuc = "SELECT * FROM tb_danhmuc ORDER BY id_danhmuc DESC";
 $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
-if(isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
-unset($_SESSION['dangki']);
+if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
+    unset($_SESSION['dangki']);
+    unset($_SESSION['cart']);
 }
 ?>
 <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
@@ -23,9 +24,23 @@ unset($_SESSION['dangki']);
                     <a class="nav-link" href="index.php">Trang chủ</a>
                 </li>
                 <?php
-                while($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
+                while ($row_danhmuc = mysqli_fetch_array($query_danhmuc)) {
                 ?>
-                <li class="nav-item"><a class="nav-link" href="index.php?quanly=danhmucsanpham&id=<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=danhmucsanpham&id=<?php echo $row_danhmuc['id_danhmuc'] ?>"><?php echo $row_danhmuc['tendanhmuc'] ?></a></li>
+                <?php
+                }
+                ?>
+                <?php
+
+                if (isset($_SESSION['dangki'])) {
+                ?>
+                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=user">Thông tin cá nhân</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=donhangdadat">Lịch sử đơn hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a></li>
+                <?php
+                } else {
+                ?>
+                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=dangnhap">Đăng nhập</a></li>
                 <?php
                 }
                 ?>
