@@ -22,8 +22,6 @@
             include("modules/quanlydonhang/lietke.php"); 
           }  elseif($tam == 'donhang' && $query == 'xemdonhang') {
             include("modules/quanlydonhang/xemdonhang.php"); 
-          } else {
-            include("modules/dashboard.php");
           }
         ?>
 </div>

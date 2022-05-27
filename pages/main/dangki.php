@@ -114,33 +114,33 @@ function test_input($data)
 <form action="" method="post" class="form-dangky">
     <p>Đăng kí thành viên</p>
     <div class="row g-5 align-items-center mb-3">
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputEmail1" class="form-label">Họ và tên</label>
             <input type="text" size="50" name="hovaten" class="form-control">
-            <span class="error" style="color: red;">* <?php echo $nameErr; ?></span>
+            <span class="error" style="color: red;"><?php echo $nameErr; ?></span>
         </div>
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputEmail1" class="form-label">Số điện thoại</label>
             <input type="text" size="50" name="dienthoai" class="form-control">
-            <span class="error" style="color: red;">* <?php echo $numberErr; ?></span>
+            <span class="error" style="color: red;"><?php echo $numberErr; ?></span>
         </div>
     </div>
     <div class="row g-5 align-items-center mb-3">
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputPassword1" class="form-label">Email</label>
             <input type="text" size="50" name="email" class="form-control">
-            <span class="error" style="color: red;">* <?php echo $emailErr; ?></span>
+            <span class="error" style="color: red;"><?php echo $emailErr; ?></span>
         </div>
-        <div class="col-auto">
+        <div class="col-6">
             <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
             <input type="text" size="50" name="matkhau" class="form-control">
-            <span class="error" style="color: red;">* <?php echo $passwordErr; ?></span>
+            <span class="error" style="color: red;"><?php echo $passwordErr; ?></span>
         </div>
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Địa chỉ</label>
         <input type="text" size="50" name="diachi" class="form-control">
-        <span class="error" style="color: red;">* <?php echo $addressErr; ?></span>
+        <span class="error" style="color: red;"><?php echo $addressErr; ?></span>
     </div>
     <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" name="check">

@@ -30,36 +30,35 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
                 <?php
                 }
                 ?>
-                <?php
-
-                if (isset($_SESSION['dangki'])) {
-                ?>
-                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=user">Thông tin cá nhân</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=donhangdadat">Lịch sử đơn hàng</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a></li>
-                <?php
-                } else {
-                ?>
-                    <li class="nav-item"><a class="nav-link" href="index.php?quanly=dangnhap">Đăng nhập</a></li>
-                <?php
-                }
-                ?>
+            </ul>
                 <?php
                 if(isset($_SESSION['dangki'])) {
                 ?>
-                <li class="nav-item"><a class="nav-link" href="index.php?quanly=user">Thông tin</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?quanly=donhangdadat">Lịch sử đơn hàng</a></li>
-                <form class="d-flex ms-auto" action="index.php?quanly=timkiem" method="post">
-                    <input class="form-control me-2" type="text" placeholder="Tìm kiếm" aria-label="Search" name="tukhoa" id="search">
-                    <button class="btn-search"  type="submit" name="timkiem" value="Tìm kiếm">
-                    <i class="fas fa-search" style="color:black;"></i>
-                    </button>
-                </form>
-                <li class="nav-item"><a class="nav-link" href="index.php?dangxuat=1">Đăng xuất</a></li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <form class="d-flex ms-auto" action="index.php?quanly=timkiem" method="post">
+                            <input class="form-control me-2" type="text" placeholder="Tìm kiếm" aria-label="Search" name="tukhoa" id="search">
+                            <button class="btn-search"  type="submit" name="timkiem" value="Tìm kiếm">
+                            <i class="fas fa-search" style="color:black;"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user" style="color:black;"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="index.php?quanly=user">Thông tin</a></li>
+                                <li><a class="dropdown-item" href="index.php?quanly=donhangdadat">Lịch sử đơn hàng</a></li>
+                                <li><a class="dropdown-item" href="index.php?dangxuat=1">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
                 <?php
                 } else {
                 ?>
-            </ul>
             <form class="d-flex ms-auto" action="index.php?quanly=timkiem" method="post">
                 <input class="form-control me-2" type="text" placeholder="Tìm kiếm" aria-label="Search" name="tukhoa" id="search">
                 <button class="btn-search"  type="submit" name="timkiem" value="Tìm kiếm">
@@ -71,7 +70,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
                 <?php
                 }
                 ?>
-                <li class="nav-item">
+                <li class="nav-item" style="list-style-type:none;">
                     <a class="nav-link" href="index.php?quanly=giohang">
                         <i class="fas fa-shopping-cart" style="color:black; width: 2rem; height: auto;"></i>
                         

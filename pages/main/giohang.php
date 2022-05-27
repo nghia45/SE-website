@@ -1,11 +1,3 @@
-<h3>Giỏ hàng
-   <?php
-   if(isset($_SESSION['dangki'])) {
-      echo 'của:  '.$_SESSION['dangki'];
-   }
-   ?>
-
-</h3>
 <!-- new -->
 <div class="container">
   <!-- Responsive Arrow Progress Bar -->
@@ -39,7 +31,7 @@ echo 'của:  '.$_SESSION['dangki'];
       if(isset($_SESSION['cart'])) {
       }
       ?>
-      <p>Tổng tiền: <?php echo number_format($tongtien).'đ' ?></p>
+    
       <p>Các mặt hàng trong giỏ hàng của bạn không được bảo lưu — hãy kiểm tra ngay để đặt hàng.</p>
     </header>
     <main class="col-12 row border border-dark">
@@ -85,8 +77,8 @@ echo 'của:  '.$_SESSION['dangki'];
     <?php
     }
     ?>
-    <div class="flex-row">Tổng tiền: <?php echo number_format($tongtien).'đ' ?></div>
-    <div class="flex-row"><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả</a></div>
+    <div style="padding-top: 1rem;">Tổng tiền: <?php echo number_format($tongtien).'đ' ?></div>
+    <div><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả</a></div>
   </div>
 </div>
 <?php
