@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container{
+  display: block;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 10px;
+    background: #ffffff;
+}
+
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+label {
+  display: block;
+  margin: 0.5rem 0.5;
+}
+
+input{
+  border-radius: 5px;
+}

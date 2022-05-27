@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Personal information</title>
+  	<link rel="stylesheet" href="./asserts/css/form.css" />
+  </head>
+<body>
+  <div class="container">
+      <div class="title">Thông tin giao hàng</div>
+      <form action="#">
+        <fieldset>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Họ và tên đệm</span>
+              <input type="text" placeholder="Họ và tên đệm" required>
+            </div>
+          </div>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Tên</span>
+              <input type="text" placeholder="Tên" required>
+            </div>
+          </div>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Số điện thoại</span>
+              <input type="text" placeholder="Số điện thoại" required>
+            </div>
+          </div>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Địa chỉ</span>
+              <input type="text" placeholder="Địa chỉ" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+        <span>Hình thức thanh toán</span>
+        <label><input type="radio" name="account-type" /> COD (thanh toán khi nhận hàng)</label>
+        <label><input type="radio" name="account-type" /> MOMO</label>
+        <label><input type="radio" name="account-type" /> Ví điện tử ZaloPay</label>
+        <label><input type="radio" name="account-type" /> VNPAY</label>
+        <label>
+          <input type="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <div class="button">
+        <input type="submit" value="Thanh toán">
+      </div>
+      </form>
+  </div>
+</body>
+</html>
