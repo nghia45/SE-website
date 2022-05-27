@@ -3,6 +3,7 @@ $sql_danhmuc = "SELECT * FROM tb_danhmuc ORDER BY id_danhmuc DESC";
 $query_danhmuc = mysqli_query($mysqli, $sql_danhmuc);
 if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
     unset($_SESSION['dangki']);
+    unset($_SESSION['cart']);
 }
 ?>
 <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
